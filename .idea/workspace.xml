@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Client Scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Client Scripts/README.md" afterDir="false" />
+    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +47,30 @@
       <option name="presentableId" value="Default" />
       <updated>1665517679671</updated>
       <workItem from="1665517684573" duration="1732000" />
-      <workItem from="1665566074563" duration="1003000" />
+      <workItem from="1665566074563" duration="1693000" />
     </task>
+    <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
+      <created>1665579397204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665579397204</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
+      <created>1665579508783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665579508783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
+      <created>1665579639176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665579639176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +90,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Fetch value from another doc type and set in another document In Frappe (ERPNext):" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetch value from another doc type and set in another document In Frappe (ERPNext):" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1665579639089">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665579639089" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1665580072675">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665580072675" />
   </component>
 </project>
