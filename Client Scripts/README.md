@@ -1,7 +1,7 @@
 # frappe-sample-CLIENT-scripts
 
-##Working with Lists
-#####use ```frappe.db.get_list``` method Frappe (ERPNext):
+## Working with Lists
+##### use ```frappe.db.get_list``` method Frappe (ERPNext):
 ```javascript
 frappe.db.get_list('Purchase Order', {
 	filters: {
@@ -15,7 +15,7 @@ frappe.db.get_list('Purchase Order', {
 ```
 
 #
-#####Fetch value from another doc type and set in another document In Frappe (ERPNext):
+##### Fetch value from another doc type and set in another document In Frappe (ERPNext):
 ```javascript
 frappe.ui.form.on('Sale Order', {
 	product(frm) {
