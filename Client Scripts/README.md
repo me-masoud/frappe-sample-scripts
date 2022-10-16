@@ -57,7 +57,25 @@ frappe.ui.form.on("Order Product CT", {
     }
 });
 ```
+## Calculate total price per each row
+```javascript
+frappe.ui.form.on("Order Item CT", {
+    unit_price(frm) {
+        calculate_total_price_per_item(frm)
+    },
+    count(frm) {
+       calculate_total_price_per_item(frm)
+    }
 
-### Use this to get fetch value from a specific doctype : 
+});
+
+function calculate_total_price_per_item(frm){
+      frm.doc.order_items.forEach(order_item => {
+            order_item.total = order_item.count * order_item.item_unit_price;
+            frm.refresh();
+        });
+}
+```
+## Use this to get fetch value from a specific doctype : 
  ```get_value```
 
