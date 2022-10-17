@@ -115,3 +115,10 @@ frappe.ui.form.on('Sale Order', {
 	}
 })
 ```
+
+## Fill select field type 
+
+```javascript
+frm.set_df_property('time_shedules_select', 'options', ['option a', 'option b']);
+    frm.refresh_field('time_shedules_select');
+```

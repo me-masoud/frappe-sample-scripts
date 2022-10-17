@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Hide adding row button for table">
-      <change beforePath="$PROJECT_DIR$/Server Scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Server Scripts/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Fill a child table from server script in frappe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +47,7 @@
       <workItem from="1665517684573" duration="1732000" />
       <workItem from="1665566074563" duration="1693000" />
       <workItem from="1665900256461" duration="3022000" />
-      <workItem from="1665988546138" duration="2102000" />
+      <workItem from="1665988546138" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
       <created>1665579397204</created>
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666012442114</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fill a child table from server script in frappe">
+      <created>1666013073456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666013073456</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,16 +122,17 @@
     <MESSAGE value="Calculate total price per each row" />
     <MESSAGE value="(Client Side Scripting)Fetching child tables" />
     <MESSAGE value="Hide adding row button for table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hide adding row button for table" />
+    <MESSAGE value="Fill a child table from server script in frappe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fill a child table from server script in frappe" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666012442009">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666013073388">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666012442009" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666012448511">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666013073388" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666013075183">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666012448511" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666013075183" />
   </component>
 </project>
