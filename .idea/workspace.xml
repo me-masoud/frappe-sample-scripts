@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Calculate total price per each row" />
+    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="(Client Side Scripting)Fetching child tables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client Scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Client Scripts/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +50,7 @@
       <workItem from="1665517684573" duration="1732000" />
       <workItem from="1665566074563" duration="1693000" />
       <workItem from="1665900256461" duration="3022000" />
+      <workItem from="1665988546138" duration="1520000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
       <created>1665579397204</created>
@@ -76,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665911280837</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="(Client Side Scripting)Fetching child tables">
+      <created>1665988815796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665988815796</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,16 +109,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fetch value from another doc type and set in another document In Frappe (ERPNext):" />
     <MESSAGE value="Calculate total price per each row" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculate total price per each row" />
+    <MESSAGE value="(Client Side Scripting)Fetching child tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Client Side Scripting)Fetching child tables" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1665911280686">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1665989976089">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665911280686" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1665911282015">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665989976089" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1665989970831">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665911282015" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1665989970831" />
   </component>
 </project>

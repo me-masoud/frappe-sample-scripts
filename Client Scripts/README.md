@@ -106,4 +106,12 @@ frappe.ui.form.on("[TARGETDOCTYPE]", {
         - [SOURCECHILDTABLE] - The table to pull information from. This value is the name of the table field in the parent doctype. *[SOURCEFIELD] - The field name to pull data from within the table.
    - [TRIGGER] - What causes the function to activate.
 
+## Hide Add row button for type Table (Child table)
 
+```javascript
+frappe.ui.form.on('Sale Order', {
+	setup(frm) {
+		frm.get_field('sale_order_added_cost').grid.cannot_add_rows = true;
+	}
+})
+```
