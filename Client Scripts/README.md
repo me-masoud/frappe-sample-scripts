@@ -122,3 +122,26 @@ frappe.ui.form.on('Sale Order', {
 frm.set_df_property('time_shedules_select', 'options', ['option a', 'option b']);
     frm.refresh_field('time_shedules_select');
 ```
+
+## Get from child table and fill into a select box
+
+```javascript
+    // get week day 
+    let day = new Date(frm.doc.delivery_date);
+    let week_day = day.getDay()
+    let week_day_name = week_days[week_day]
+
+
+     frappe.model.with_doc('Def Delivery Method', frm.doc.delivery_method).then(({time_schedules}) => {
+         const durations = []
+         
+        time_schedules.forEach((time_schedule) => {
+            if(time_schedule.week_days === week_day_name) {
+                durations.push(time_schedule.week_days)
+            }
+        })
+        frm.set_df_property('time_shedules_select', 'options', durations);
+     })
+     
+    frm.refresh_field('time_shedules_select');
+``` 
