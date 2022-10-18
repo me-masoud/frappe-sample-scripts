@@ -151,3 +151,18 @@ frm.set_df_property('time_shedules_select', 'options', ['option a', 'option b'])
 ```javascript
 frappe.throw(' your message ')
 ```
+
+## Add filter for linked document in another doctype
+
+```javascript
+frappe.ui.form.on("Bank Reconciliation", "onload", function(frm) {
+    frm.set_query("bank_account", function() {
+        return {
+            "filters": {
+                "account_type": "Bank",
+                "group_or_ledger": "Ledger"
+            }
+        };
+    });
+});
+```
