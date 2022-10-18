@@ -145,3 +145,9 @@ frm.set_df_property('time_shedules_select', 'options', ['option a', 'option b'])
      
     frm.refresh_field('time_shedules_select');
 ``` 
+
+## Throw error message in client script 
+
+```javascript
+frappe.throw(' your message ')
+```

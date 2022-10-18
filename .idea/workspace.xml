@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Fill select field type in client script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client Scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Client Scripts/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +50,7 @@
       <workItem from="1665566074563" duration="1693000" />
       <workItem from="1665900256461" duration="3022000" />
       <workItem from="1665988546138" duration="3519000" />
+      <workItem from="1666078709337" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
       <created>1665579397204</created>
