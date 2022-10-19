@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment=" Change doc filed and properties of a field in document" />
+    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="How to Call backend function (server script) in client script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +51,7 @@
       <workItem from="1665900256461" duration="3022000" />
       <workItem from="1665988546138" duration="3519000" />
       <workItem from="1666078709337" duration="1402000" />
-      <workItem from="1666160286944" duration="3945000" />
+      <workItem from="1666160286944" duration="5444000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
       <created>1665579397204</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666167029056</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="How to Call backend function (server script) in client script">
+      <created>1666167852713</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666167852713</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,18 +189,19 @@
     <MESSAGE value=" Updation of Total field based on change in Child table" />
     <MESSAGE value="Call event on adding or removing row in child table" />
     <MESSAGE value=" Change doc filed and properties of a field in document" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Change doc filed and properties of a field in document" />
+    <MESSAGE value="How to Call backend function (server script) in client script" />
+    <option name="LAST_COMMIT_MESSAGE" value="How to Call backend function (server script) in client script" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="33" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666167028985">
+    <state x="499" y="33" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666167852645">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="33" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666167028985" />
+    <state x="499" y="33" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666167852645" />
     <state x="2419" y="7" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1666095093452" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666167030087">
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666167854222">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666167030087" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666167854222" />
     <state x="2475" y="265" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1666095104537" />
   </component>
 </project>
