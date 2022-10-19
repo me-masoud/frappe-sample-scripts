@@ -33,3 +33,16 @@ for item in payments:
 order.save()
 
 ``` 
+
+## Set value of name1 from another field value (Before Save)
+
+This code, fetches data from another doctype and sets the name1 field from that data
+```python
+
+# get_value will get only value of one field in the doctype 
+brand = frappe.db.get_value("Def Car Model", doc.car_model, "brand")
+
+# With this line you can change the name1 field to whatever you want
+doc.name1 = brand + ' ' + doc.car_model
+
+```
