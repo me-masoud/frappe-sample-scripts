@@ -220,3 +220,19 @@ frappe.ui.form.on('Order Item CT', {
     }
 });
 ```
+
+## Change doc filed and properties of a field in document
+Official Document : <a href="https://frappeframework.com/docs/v14/user/en/api/form#frmset_df_property">Click Here</a>
+```javascript
+// change the fieldtype of description field to Text
+frm.set_df_property('description', 'fieldtype', 'Text');
+
+// set the options of the status field to only be [Open, Closed]
+frm.set_df_property('status', 'options', ['Open', 'Closed'])
+
+// set a field as mandatory
+frm.set_df_property('title', 'reqd', 1)
+
+// set a field as read only
+frm.set_df_property('status', 'read_only', 1)
+``` 
