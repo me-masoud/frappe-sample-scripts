@@ -152,6 +152,14 @@ frm.set_df_property('time_shedules_select', 'options', ['option a', 'option b'])
 frappe.throw(' your message ')
 ```
 
+### Print Message in dialog
+```javascript
+        frappe.msgprint('Your message 🎉 ');
+```
+
+message and throw difference:
+message will not terminate process but throw does.
+
 ## Add filter for linked document in another doctype
 
 ```javascript
