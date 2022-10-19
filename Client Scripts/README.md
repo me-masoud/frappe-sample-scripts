@@ -206,3 +206,17 @@ frappe.ui.form.on('Order',  {
     }
 })
 ```
+
+## Call event on adding or removing row in child table 
+official document for this issue : 
+<a href="https://frappeframework.com/docs/v14/user/en/api/form#child-table-events" target="_blank">Click Here</a>
+```javascript
+frappe.ui.form.on('Order Item CT', { 
+    order_items_add(frm, cdt, cdn) { 
+        calculate_final_price(frm)
+    },
+    order_items_remove(frm, cdt, cdn) { 
+        calculate_final_price(frm)
+    }
+});
+```
