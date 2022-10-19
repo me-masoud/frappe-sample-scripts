@@ -191,3 +191,18 @@ frappe.ui.form.on('Dynamic Link', { // The child table is defined in a DoctType 
     }
 });
 ```
+
+## Updation of Total field based on change in Child table
+I have a Doctype (Order) and inside of that I have a field (order_items) with type "table",
+Now I need to call a function for Order on every update on this child table(order_items).
+
+```javascript
+frappe.ui.form.on('Order',  {
+    refresh(frm, cdt,cdn){
+        var d = locals[cdt][cdn];
+        d.order_items.forEach(function(item){
+        calculate_final_price(frm) // my function
+    });
+    }
+})
+```

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Message and throw in frappe">
+    <list default="true" id="9adec3cd-5a6e-4be1-acca-b0cecb0abe64" name="Changes" comment="Child table event (How to call an event on parent doctype)">
       <change beforePath="$PROJECT_DIR$/Client Scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Client Scripts/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <workItem from="1665900256461" duration="3022000" />
       <workItem from="1665988546138" duration="3519000" />
       <workItem from="1666078709337" duration="1402000" />
-      <workItem from="1666160286944" duration="1482000" />
+      <workItem from="1666160286944" duration="2119000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch value from another doc type and set in another document In Frappe (ERPNext):">
       <created>1665579397204</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666160867248</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Child table event (How to call an event on parent doctype)">
+      <created>1666161830161</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666161830161</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,18 +157,19 @@
     <MESSAGE value="Fill a child table from server script in frappe" />
     <MESSAGE value="Fill select field type in client script" />
     <MESSAGE value="Message and throw in frappe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message and throw in frappe" />
+    <MESSAGE value="Child table event (How to call an event on parent doctype)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Child table event (How to call an event on parent doctype)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666160867030">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1666161830086">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666160867030" />
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666161830086" />
     <state x="2419" y="7" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1666095093452" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666160869937">
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1666161831449">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666160869937" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1666161831449" />
     <state x="2475" y="265" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1666095104537" />
   </component>
 </project>
