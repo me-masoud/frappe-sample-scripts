@@ -236,3 +236,27 @@ frm.set_df_property('title', 'reqd', 1)
 // set a field as read only
 frm.set_df_property('status', 'read_only', 1)
 ``` 
+
+## How to Call backend function (server script) in client script 
+Official Document : <a href="https://frappeframework.com/docs/v14/user/en/api/form#frmcall">Click Here</a>
+
+```python
+class ToDo(Document):
+    @frappe.whitelist()
+    def get_linked_doc(self, throw_if_missing=False):
+        if not frappe.db.exists(self.reference_type, self.reference_name):
+            if throw_if_missing:
+                frappe.throw('Linked document not found')
+
+        return frappe.get_doc(self.reference_type, self.reference_name)
+```
+
+```javascript
+frm.call('get_linked_doc', { throw_if_missing: true })
+    .then(r => {
+        if (r.message) {
+            let linked_doc = r.message;
+            // do something with linked_doc
+        }
+    })
+```
