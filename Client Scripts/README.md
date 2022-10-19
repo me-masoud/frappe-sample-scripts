@@ -174,3 +174,20 @@ frappe.ui.form.on("Bank Reconciliation", "onload", function(frm) {
     });
 });
 ```
+
+## Child table event (How to call an event on parent doctype)
+
+```javascript
+// this code is located inside `todo.js`
+
+frappe.ui.form.on('Dynamic Link', { // The child table is defined in a DoctType called "Dynamic Link"
+    links_add(frm, cdt, cdn) { // "links" is the name of the table field in ToDo, "_add" is the event
+        // frm: current ToDo form
+        // cdt: child DocType 'Dynamic Link'
+        // cdn: child docname (something like 'a6dfk76')
+        // cdt and cdn are useful for identifying which row triggered this event
+
+        frappe.msgprint('A row has been added to the links table 🎉 ');
+    }
+});
+```
