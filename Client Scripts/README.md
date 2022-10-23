@@ -260,3 +260,9 @@ frm.call('get_linked_doc', { throw_if_missing: true })
         }
     })
 ```
+
+## Web Forms 
+### Get Value in Client Script in Web Forms
+```javascript
+value = frappe.web_form.get_value([fieldname]);
+```
