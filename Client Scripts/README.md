@@ -266,3 +266,9 @@ frm.call('get_linked_doc', { throw_if_missing: true })
 ```javascript
 value = frappe.web_form.get_value([fieldname]);
 ```
+
+### Visibility depends on script in field type
+
+```javascript
+eval:doc.field_name === field_value
+```
