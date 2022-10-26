@@ -46,3 +46,22 @@ brand = frappe.db.get_value("Def Car Model", doc.car_model, "brand")
 doc.name1 = brand + ' ' + doc.car_model
 
 ```
+
+## Portal Pages
+make portal pages private (login required):
+
+add this code to custom_portal_name.py under get_context() function
+```python
+  if frappe.session.user == "Guest":
+        frappe.throw("You need to be logged in to access this page", frappe.PermissionError)
+```
+
+sample : 
+```python
+import frappe
+
+def get_context(context):
+    if frappe.session.user == "Guest":
+        frappe.throw("You need to be logged in to access this page", frappe.PermissionError)
+
+```
