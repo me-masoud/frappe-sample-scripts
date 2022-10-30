@@ -65,3 +65,15 @@ def get_context(context):
         frappe.throw("You need to be logged in to access this page", frappe.PermissionError)
 
 ```
+
+## redirect to absolute url
+```python
+frappe.redirect("https://google.com")
+```
+sample : 
+```python
+import frappe
+
+def get_context(context):
+    frappe.redirect("https://masoud.me")
+```
