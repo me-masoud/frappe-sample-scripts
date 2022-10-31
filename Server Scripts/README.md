@@ -77,3 +77,16 @@ import frappe
 def get_context(context):
     frappe.redirect("https://masoud.me")
 ```
+
+## Working with Database : 
+
+use : frappe.db
+after your changes use commit 
+
+for example: 
+
+```python
+
+frappe.db.set_value()
+frappe.db.commit()
+```
