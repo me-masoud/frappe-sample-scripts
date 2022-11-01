@@ -112,3 +112,14 @@ I did it with writing code directly into python controller
 from frappe.share import add
 frappe.share.add("User Remaining Subscription plan", "autogallery@gmail.com-2022-11-08", "work.masoudhosseini@gmail.comaa", write=1, share=1)
 ```
+
+## Try Cache in python (Frappe )
+```python
+	try:
+		user = frappe.session.user
+		bank = frappe.get_single('Zarrinpal Gateway')
+		order = frappe.get_last_doc(bank.order_doctype_name, filters={"user": user})
+		context.amount = order.final_price
+	except frappe.DoesNotExistError:
+		frappe.throw("You have no active payment request", frappe.PermissionError)
+```
