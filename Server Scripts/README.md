@@ -90,3 +90,16 @@ for example:
 frappe.db.set_value()
 frappe.db.commit()
 ```
+
+## Working with Utilities in server script
+```python
+thirty_days_later_date = frappe.utils.add_to_date(frappe.utils.now(), days=30)
+
+gallery = frappe.get_doc({
+    'doctype': 'User Remaining Subscription plan',
+    'user': doc.name,
+    'expire_date':thirty_days_later_date
+})
+
+gallery.insert()
+```
