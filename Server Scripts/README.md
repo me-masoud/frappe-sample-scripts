@@ -103,3 +103,12 @@ gallery = frappe.get_doc({
 
 gallery.insert()
 ```
+
+## Share document with others (Auto sharing )
+I could not do this with client script or server script 
+I did it with writing code directly into python controller
+
+```python
+from frappe.share import add
+frappe.share.add("User Remaining Subscription plan", "autogallery@gmail.com-2022-11-08", "work.masoudhosseini@gmail.comaa", write=1, share=1)
+```
