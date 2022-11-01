@@ -91,7 +91,7 @@ frappe.db.set_value()
 frappe.db.commit()
 ```
 
-## Working with Utilities in server script
+## Working with Utilities in server script and time
 ```python
 thirty_days_later_date = frappe.utils.add_to_date(frappe.utils.now(), days=30)
 
