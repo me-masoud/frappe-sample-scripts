@@ -123,3 +123,33 @@ frappe.share.add("User Remaining Subscription plan", "autogallery@gmail.com-2022
 	except frappe.DoesNotExistError:
 		frappe.throw("You have no active payment request", frappe.PermissionError)
 ```
+
+
+# Workflow
+## workflow action
+work flow event in client script : use : "after_workflow_action"
+```javascript
+frappe.ui.form.on("Order", {
+    after_workflow_action: function(frm) {
+        if (frm.workflow_state == "Submitted"){
+        branch = frappe.db.get_last_do('Branch' , frm.doc.branch)
+        frappe.call({
+		    method:"frappe.share.add",
+		    args:{
+		        doctype:"Order",
+	            name: frm.docname,
+	            user: branch.branch_director,
+	            read:1,
+	            write:1,
+	            share:0,
+	            everyone:0
+		    },
+		    callback: function (r) {
+				 frappe.msgprint("XXXXX");
+			}
+		});
+		}
+    }
+    })
+
+```
