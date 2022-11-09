@@ -272,3 +272,10 @@ value = frappe.web_form.get_value([fieldname]);
 ```javascript
 eval:doc.field_name === field_value
 ```
+
+# Doctype Script
+## in field configuration -> Display depends on
+
+```javascript
+eval:doc.type == 'xxx'
+```  
