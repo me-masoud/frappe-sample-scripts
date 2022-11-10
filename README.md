@@ -7,4 +7,4 @@ In this Repository We will archive some server and client script that has writte
 - Feel free to add and copy sample code from all over the web 
 
 # Why ?
-- Why not ?
+- Why not ? let's make this work somewhere more beautiful.
