@@ -153,3 +153,30 @@ frappe.ui.form.on("Order", {
     })
 
 ```
+
+## Sync child table with another doctype
+
+```python
+if doc.related_goal:
+    
+    goal = frappe.get_doc('Goal', doc.related_goal)
+    
+    tasks = frappe.db.get_list('Task' ,filters={'related_goal': doc.related_goal},
+    fields=[
+    'responsible_person',
+    'status' ,
+    'name'
+    
+    ])
+    log(tasks)
+    goal.related_tasks = []
+    
+    for item in tasks:
+        goal.append('related_tasks', {
+            'task': item.name,
+            'responsible' : item.responsible_person, 
+            'status' : item.status,
+            'goal' : doc.related_goal,
+        })
+    goal.save()
+```
