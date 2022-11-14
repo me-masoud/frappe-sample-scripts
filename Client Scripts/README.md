@@ -211,14 +211,41 @@ frappe.ui.form.on('Order',  {
 official document for this issue : 
 <a href="https://frappeframework.com/docs/v14/user/en/api/form#child-table-events" target="_blank">Click Here</a>
 ```javascript
-frappe.ui.form.on('Order Item CT', { 
-    order_items_add(frm, cdt, cdn) { 
-        calculate_final_price(frm)
-    },
-    order_items_remove(frm, cdt, cdn) { 
-        calculate_final_price(frm)
-    }
-});
+ frappe.ui.form.on("Order Product CT", {
+     
+        order_products_add(frm, cdt, cdn) {
+            calculate_total_price(frm)
+            calculate_final_price(frm)
+        },
+        order_products_remove(frm, cdt, cdn) { 
+            calculate_total_price(frm)
+            calculate_final_price(frm)
+        },
+        unit_price(frm, cdt, cdn){
+            calculate_total_price(frm)
+            calculate_final_price(frm)
+        },
+        count(frm, cdt, cdn){
+            calculate_total_price(frm)
+            calculate_final_price(frm)
+        }
+     
+ })
+
+ 
+ function calculate_total_price(frm){
+     
+        let sum_total_prices = frm.doc.order_products.reduce((total,order_product) => total + (order_product.count * order_product.unit_price) , 0);
+        frm.doc.total_price = sum_total_prices;
+        frm.refresh_field('total_price');
+ }
+ 
+  function calculate_final_price(frm){
+     
+        let sum_total_prices = frm.doc.order_products.reduce((total,order_product) => total + (order_product.count * order_product.unit_price), 0);
+        frm.doc.final_price = sum_total_prices - frm.doc.discount_price;
+        frm.refresh_field('final_price');
+ }
 ```
 
 ## Change doc filed and properties of a field in document
