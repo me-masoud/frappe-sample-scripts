@@ -180,3 +180,18 @@ if doc.related_goal:
         })
     goal.save()
 ```
+
+### Generate hash 
+
+```pyhon
+	def autoname(self):
+		"""Set name for folder"""
+		if self.is_folder:
+			if self.folder:
+				self.name = self.get_name_based_on_parent_folder()
+			else:
+				# home
+				self.name = self.file_name
+		else:
+			self.name = frappe.generate_hash("", 10)
+```
