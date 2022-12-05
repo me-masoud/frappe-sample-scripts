@@ -195,3 +195,9 @@ if doc.related_goal:
 		else:
 			self.name = frappe.generate_hash("", 10)
 ```
+
+### Get Random integer in frappe  : 
+
+```python
+frappe.utils.now()[20:]
+```
