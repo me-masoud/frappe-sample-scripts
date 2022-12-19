@@ -201,3 +201,9 @@ if doc.related_goal:
 ```python
 frappe.utils.now()[20:]
 ```
+
+### Get user with a specific role : 
+
+```python 
+user =  frappe.get_list("User" , filters={"role" : "oher inventory manager"})
+```
