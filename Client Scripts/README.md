@@ -306,3 +306,10 @@ eval:doc.field_name === field_value
 ```javascript
 eval:doc.type == 'xxx'
 ```  
+
+
+## Get User Roles 
+```javascript
+let roles = frappe.user_roles;
+
+```
