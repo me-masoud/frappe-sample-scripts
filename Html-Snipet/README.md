@@ -1,5 +1,5 @@
 ## Generate Qr Code 
-<code>
+```html
   <style>
     .print-format {
       padding: 0px;
@@ -23,4 +23,4 @@
     </div>
   </div>
 
-</code>
+```
